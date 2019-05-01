@@ -1,4 +1,6 @@
 {
 	"mongoURI": "mongodb+srv://Rick:thisissafe2k19@devconnector-bttpr.mongodb.net/test?retryWrites=true",
-	"jwtSecret": "mysecrettoken"
+	"jwtSecret": "mysecrettoken",
+	"githubClientId": "0d3ffe86e47165e6d923",
+	"githubSecret": "977721a8c9674f3e97bb3d2a417b6e3be7df1b59"
 }
