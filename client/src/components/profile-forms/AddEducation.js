@@ -114,6 +114,6 @@ AddEducation.propTypes = {
 	addEducation: PropTypes.func.isRequired // ptfr
 };
 
-export default connect(null, { addEducation })(AddEducation);
+export default connect(null, { addEducation })(withRouter(AddEducation));
 
 // racfp

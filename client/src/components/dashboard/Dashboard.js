@@ -9,9 +9,12 @@ import Experience from './Experience';
 import Education from './Education';
 
 const Dashboard = ({ getCurrentProfile, auth: { user }, deleteAccount, profile: { profile, loading } }) => {
-	useEffect(() => {
-		getCurrentProfile();
-	}, []); // [] - So it only runs once
+	useEffect(
+		() => {
+			getCurrentProfile();
+		},
+		[ getCurrentProfile ]
+	); // [] - So it only runs once
 
 	return loading && profile === null ? (
 		<Spinner />
